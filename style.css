@@ -1,0 +1,24 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+.container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: min-content 1fr;
+}
+
+.header {
+  background-color: lightcoral;
+}
+
+.sidebar {
+  background-color: lightblue;
+  grid-row: 1 / 3;
+}
+
+.main-content {
+  background-color: lightgreen;
+}
