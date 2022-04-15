@@ -3,10 +3,26 @@
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
+/* Google Icon Sizes */
+.material-icons.md-18,
+.material-icons-outlined.md-18 { 
+  font-size: 18px;
+}
+
+.material-icons.md-24,
+.material-icons-outlined.md-24 { 
+  font-size: 24px; 
+}
+
+.material-icons.md-36,
+.material-icons-outlined.md-36 { 
+  font-size: 36px; 
+}
+
+.material-icons.md-48,
+.material-icons-outlined.md-48 { 
+  font-size: 48px; 
+}
 
 html, body {
   margin: 0;
@@ -21,7 +37,7 @@ html, body {
 }
 
 .header {
-  background-color: white;
+  padding: 16px 48px;
 }
 
 .sidebar {
@@ -62,4 +78,40 @@ html, body {
   align-items: center;
   gap: 22px;
   padding-left: 6px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 16px;
+  gap: 32px;
+}
+
+.search-bar {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-input {
+  flex: auto;
+  border: 0;
+  border-radius: 100px;
+  padding: 0 16px;
+  height: 2.5rem;
+  max-width: 600px;
+  background-color: #eee;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.profile-pic-small {
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
 }
