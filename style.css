@@ -37,7 +37,11 @@ html, body {
 }
 
 .header {
-  padding: 16px 48px;
+  display: grid;
+  gap: 32px;
+  padding:  16px 48px 24px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 .sidebar {
@@ -48,6 +52,7 @@ html, body {
   padding: 16px;
   background-color: var(--blue);
   color: white;
+  z-index: 2;
 }
 
 .main-content {
@@ -83,7 +88,7 @@ html, body {
 .header-top {
   display: flex;
   justify-content: space-between;
-  padding-right: 16px;
+  padding-right: 24px;
   gap: 32px;
 }
 
@@ -91,14 +96,14 @@ html, body {
   display: flex;
   flex: 1;
   align-items: center;
-  gap: 8px;
+  gap: 24px;
 }
 
 .search-input {
   flex: auto;
   border: 0;
   border-radius: 100px;
-  padding: 0 16px;
+  padding: 0 32px;
   height: 2.5rem;
   max-width: 600px;
   background-color: #eee;
@@ -111,7 +116,56 @@ html, body {
 }
 
 .profile-pic-small {
-  height: 65px;
-  width: 65px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.user-greeting {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
+  gap: 32px;
+}
+
+.profile-pic-large {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+}
+
+.greeting-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.greeting-hi {
+  margin: 0;
+  font-weight: bold;
+}
+
+.greeting-name {
+  margin: 0;
+}
+
+.button-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 32px;
+}
+
+.button-row button {
+  width: 128px;
+  border: 0;
+  border-radius: 32px;
+  background-color: var(--blue);
+  color: white;
 }
