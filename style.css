@@ -15,8 +15,8 @@ html, body {
 
 .container {
   display: grid;
-  height: 100%;
-  grid-template-columns: 1fr 4fr;
+  min-height: 100%;
+  grid-template-columns: 350px auto;
   grid-template-rows: min-content 1fr;
 }
 
